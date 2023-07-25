@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B8A3-fruit-brust-website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- lato google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3e2929b617.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-lato {
+          font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
+  <header>
+      <!-- nav start here -->
+      <nav class=" bg-red-400 items-center rounded-full max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24">
+        <div class=" flex gap-1 h-10">
+            <div class=" bg-red-400 pt-2 items-center flex-1">
+              <ul class="flex gap-4 text-white">
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Shop</li>
+                  <li>All Fruits</li>
+              </ul>
+            </div>
+           
+            <div class="bg-red-400 flex items-center justify-center flex-1">
+              <img src="./images/logo.png" alt="">
+              <h2 class="font-black text-white font ">Fruit Burst</h2>
+            </div>
+            <div class="bg-red-400 flex-1">
+              <div class=" form-control items-center justify-end">
+                <input type="text" placeholder="Search here" class="input rounded-full w-80 " />
+                
+                  
+              </div>
+                
+            </div>
+            
+        </div>
+      </nav>
+        <!-- nave end here -->
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>
