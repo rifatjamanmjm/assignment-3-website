@@ -20,14 +20,15 @@
                     colors: {
                         'gradient-start': '#FF8938',
                         'gradient-end': '#F00',
-                        'fruid-color-1':'#FFFFFF',
+                        'fruit-color-1':'#FFFFFF',
                     },
-                    background-image:{
+                    backgroundImage:{
                       'bg-hero-1':"url(./images/banner1.png)",
                       'bg-hero-2':"url(./images/banner2.png)",
                       'bg-hero-3':"url(./images/banner3.png)",
                       'bg-hero-4':"url(./images/banner4.png)",
-                    }
+                      'bg-team-5':"url(./images/team.png)",
+                    } ,
                 }
             }
         }
@@ -36,6 +37,25 @@
         .font-lato {
           font-family: 'Lato', sans-serif;
         }
+        .btn-primary{
+          background: #F8555f;
+          color:#fff;
+          font-weight:900px;
+          border-radius: 10px;
+          border:none;
+          padding: 22px 32px;
+           }
+           .btn-primary:hover{
+            background-color: #f30989;
+           }
+           .h{
+            height: 7px;
+            width: 80%;
+            border: 0 none;
+            margin-right: auto;
+            
+            background-color: #fff;
+           }
     </style>
 </head>
 <body class="font-lato tex-base">
@@ -57,10 +77,12 @@
               <h2 class="font-black text-white font ">Fruit Burst</h2>
             </div>
             <div class="bg-red-400 flex-1 ">
-              <div class=" form-control items-center justify-end">
+              <div class=" relative form-control items-center justify-end">
                 <input type="text" placeholder="Search here" class="input rounded-full w-80 " />
               
-                
+                <div>
+                  <p class="absolute pl-40 -mx-8 my-2 top-1 "><i class="fa-solid fa-magnifying-glass"></i></p>
+                </div>
                   
               </div>
                 
@@ -70,8 +92,11 @@
       </nav>
         <!-- nave end here -->
         <!-- banner start here -->
-        <section class="max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24">
-          <div class="carousel w-full">
+        <section class="max-w-screen-xl mx-auto my-10 py-5 px-8 ">
+          
+          
+
+          <div class="carousel w-full relative">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./images/banner1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -79,11 +104,19 @@
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
                 <div>
-                    <h1 >
-                      Exotic tastes at your doorstep
-                    </h1>
                 </div>
+                  <!-- slider one -->
+                <div class=" absolute w-9/12  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+                  
+                  <h1 class=" text-[75px]  fruit-color-1 font-extrabold  ">Exotic tastes at your doorstep</h1>
+                  <p>We supply highly quality organic products</p>
+                  <button class="btn-primary">Shop Now</button>
+
+                </div>
+                
+               
             </div> 
+              <!-- slider two -->
             <div id="slide2" class="carousel-item relative w-full">
               <img src="./images/banner2.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -91,6 +124,7 @@
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
+            <!-- slider three -->
             <div id="slide3" class="carousel-item relative w-full">
               <img src="./images/banner3.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -98,6 +132,7 @@
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
+                <!-- slider four -->
             <div id="slide4" class="carousel-item relative w-full">
               <img src="./images/banner4.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -109,10 +144,166 @@
         </section>
   </header>
   <main>
+      <section class=" gap-12 flex max-w-screen-xl mx-auto my-10 py-5 px-8 ">
+        <div class=" flex-1 ">
+        
+        
+          <!-- Deal start here -->
+          <h2 class="font-black text-[48px]">
+            Deal of the day
+          </h2>
+          <p class=" text-[16px]">
+            Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+        </div>
+        <div class=" flex-1 justify-end ">
+          <span class="flex justify-between text-center pl-40"> 
+            <div>
+            <span class="text-[48px] font-extrabold px-3"> 29 </span>
+            <span class="text-[48px] font-extrabold"> ⋮</span>
+            <p>Days</p>
+          </div>
+            <div>
+            <span class="text-[48px] font-extrabold px-3"> 15 </span>
+            <span class="text-[48px] font-extrabold"> ⋮</span>
+            <p>Hours</p>
+          </div>
+            <div>
+            <span class="text-[48px] font-extrabold px-3"> 25 </span>
+            <span class="text-[48px] font-extrabold"> ⋮</span>
+            <p>Minutes</p>
+          </div>
+            <div>
+            <span class="text-[48px] font-extrabold px-3"> 08 </span>
+            <span class="text-[48px] font-extrabold"> </span>
+            <p>Second</p>
+          </div>
+            
+          </span>
+
+        </div>
+
+      </section>
+
+
+        <!-- fruit section start -->
+        <section >
+        <div class="gap-5 items-center justify-between flex max-w-screen-xl mx-auto my-10 py-5 px-8 >
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6>
+            <!-- fruit one -->  
+            <div class="card bg-base-100 w-[300px] border">
+                <figure class="px-12 pt-10">
+                <img src="./images/fruit6.png" alt="fruits" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                <h2 class="card-title text-[24px]">12.90$ - 18.85$</h2>
+                <p class="text-[16px]">Apples</p>
+
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <div class="card-actions">
+                 <p class="mt-7"><a href="#">Details</a> </p>
+                </div>
+              </div>
+            </div>
+            <!-- fruit two -->  
+              <div class="card bg-base-100 w-[300px] border">
+                <figure class="px-12 pt-10">
+                <img src="./images/fruit7.png" alt="fruits" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                <h2 class="card-title text-[24px]">12.90$ - 18.85$</h2>
+                <p class="text-[16px]">Apples</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked  />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <div class="card-actions">
+                 <p class="mt-7"><a href="#">Details</a> </p>
+                </div>
+              </div>
+            </div>
+            <!-- fruit three -->  
+              <div class="card bg-base-100 w-[300px] border">
+                <figure class="px-12 pt-10">
+                <img src="./images/fruit8.png" alt="fruits" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                <h2 class="card-title text-[24px]">12.90$ - 20.85$</h2>
+                <p class="text-[16px]">Apples</p>
+                
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <div class="card-actions">
+                 <p class="mt-7"><a href="#">Details</a> </p>
+                </div>
+              </div>
+            </div>
+            <!-- fruit Four -->  
+              <div class="card bg-base-100 w-[300px] border">
+                <figure class="px-12 pt-10">
+                <img src="./images/fruit9.png" alt="fruits" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                <h2 class="card-title text-[24px]">12.90$ - 19.85$</h2>
+                <p class="text-[16px]">Apples</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked  />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+                <div class="card-actions">
+                 <p class="mt-7"><a href="#">Details</a> </p>
+                </div>
+              </div>
+            </div>
+
+          
+            </div>
+        </div>
+          <div class="text-center"><br>
+            <button class="btn-primary">Shop All</button>
+          </div>
+
+        </section>
+        <!-- Meet the team sectin start here -->
+        <section class="relative ">
+          <div class="max-w-screen-xl mx-auto my-10 py-5 px-8">
+                     
+            <div class="hero h-[1280] w-[690]" style="background-image: url(./images/team.png);">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                  <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                  <button class="btn btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+
+        </section>
+
 
   </main>
   <footer>
-      <div>g</div>
+
   </footer>
 </body>
 </html>
