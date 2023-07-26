@@ -20,6 +20,13 @@
                     colors: {
                         'gradient-start': '#FF8938',
                         'gradient-end': '#F00',
+                        'fruid-color-1':'#FFFFFF',
+                    },
+                    background-image:{
+                      'bg-hero-1':"url(./images/banner1.png)",
+                      'bg-hero-2':"url(./images/banner2.png)",
+                      'bg-hero-3':"url(./images/banner3.png)",
+                      'bg-hero-4':"url(./images/banner4.png)",
                     }
                 }
             }
@@ -31,7 +38,7 @@
         }
     </style>
 </head>
-<body>
+<body class="font-lato tex-base">
   <header>
       <!-- nav start here -->
       <nav class=" bg-red-400 items-center rounded-full max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24">
@@ -52,6 +59,7 @@
             <div class="bg-red-400 flex-1 ">
               <div class=" form-control items-center justify-end">
                 <input type="text" placeholder="Search here" class="input rounded-full w-80 " />
+              
                 
                   
               </div>
@@ -61,6 +69,44 @@
         </div>
       </nav>
         <!-- nave end here -->
+        <!-- banner start here -->
+        <section class="max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+                <div>
+                    <h1 >
+                      Exotic tastes at your doorstep
+                    </h1>
+                </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </section>
   </header>
   <main>
 
