@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>assignment-3-website</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=bFTj0xWYL-yUnfwVaEW876trFs-0UYLYeoXNjSgLR4MBW17_Z-kHDocGbKRHEQbAlhFBfNBaeBG5cwZdhh_0LmWNJjis6WWjvuh0xFElYelVbmpXBIbXSFz4F0I78cvIP2HpJzZxMPF8nSvazOZLvEaHnKkk2BiT-JuEh09CU4uX32zzqZ5AF_yOcW0cyZYzDIrWFM264411_lJ2u0QjSqJxF843qHDVl_-lFayv3Z0XgQ2uteycI-dYUPPl-pryR1Ld4d_5J8O_7dtIMpEWRGm6B1IfAs-9erFdda4g6QW6W_h7i1OLmJRES1r0rhv2vUKKK4EcICmB4U6cqGx5cR2JTixOmXIvHhsABm3qviY2AP5peHezNbv3EMTHfkpHyf9l7sY3XgctEY_F1u4LMDyoVCJ6ZmdaIhoF_xB21iKyuqNz29xZqecHMo6nWtN0HhAui_xV8ls7T4Ej6hWwqX5brkL0o9YyWNwjur-K-HhzVleLKQ5siaXzJ0j5HMf4" charset="UTF-8"></script><script src="https://cdn.tailwindcss.com"></script>
   <!-- lato google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +74,7 @@
            
             <div class="bg-red-400 flex items-center justify-center flex-1">
               <img src="./images/logo.png" alt="">
-              <h2 class="font-black text-white font ">Fruit Burst</h2>
+              <h2 class="font-black text-white text-[40px] ">Fruit Burst</h2>
             </div>
             <div class="bg-red-400 flex-1 ">
               <div class=" relative form-control items-center justify-end">
@@ -109,7 +109,7 @@
                 <div class=" absolute w-9/12  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
                   
                   <h1 class=" text-[75px]  fruit-color-1 font-extrabold  ">Exotic tastes at your doorstep</h1>
-                  <p>We supply highly quality organic products</p>
+                  <p class="pb-8">We supply highly quality organic products</p>
                   <button class="btn-primary">Shop Now</button>
 
                 </div>
@@ -206,9 +206,37 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
-                <div class="card-actions">
-                 <p class="mt-7"><a href="#">Details</a> </p>
+               
+               
+                
+               <div class="card-actions">
+                <!-- modal start here -->
+                  <button class="btn" onclick="my_modal_1.showModal()">details </button>
+                  <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box ">
+                    <img class=" ml-20 w-[300px] h-[300px] items-center border " src="./images/fruit8.png" alt="">
+                  <h3 class="font-extrabold text-[40px] ">Red Dragon</h3>
+                  <p class="py-4 px-12  text-center text-[16px] ">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    
+                  
+                  <div class="rating ">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+
+                  <div class="modal-action flex item-center justify-center ">
+                  <span class=" border  bg-rose-800 "><button class="btn">Close</button></span>
+                  <span class="  "><button class="btn btn-primary">Buy Now</button></span> 
                 </div>
+                </form>
+                </dialog>
+              <!-- modal end here -->
+               </div>
+                
+              
               </div>
             </div>
             <!-- fruit two -->  
@@ -218,7 +246,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                 <h2 class="card-title text-[24px]">12.90$ - 18.85$</h2>
-                <p class="text-[16px]">Apples</p>
+                <p class="text-[16px]">Orange</p>
                 <div class="rating">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -227,7 +255,7 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="card-actions">
-                 <p class="mt-7"><a href="#">Details</a> </p>
+                  <button class="btn" onclick="my_modal_1.showModal()">details </button>
                 </div>
               </div>
             </div>
@@ -238,7 +266,7 @@
                 </figure>
                 <div class="card-body items-center text-center">
                 <h2 class="card-title text-[24px]">12.90$ - 20.85$</h2>
-                <p class="text-[16px]">Apples</p>
+                <p class="text-[16px]">Red Dragon</p>
                 
                 <div class="rating">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -248,7 +276,7 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="card-actions">
-                 <p class="mt-7"><a href="#">Details</a> </p>
+                 <button class="btn" onclick="my_modal_1.showModal()">details </button>
                 </div>
               </div>
             </div>
@@ -268,7 +296,7 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="card-actions">
-                 <p class="mt-7"><a href="#">Details</a> </p>
+                  <button class="btn" onclick="my_modal_1.showModal()">details </button>
                 </div>
               </div>
             </div>
@@ -282,7 +310,7 @@
 
         </section>
         <!-- Meet the team sectin start here -->
-        <section class="relative  max-w-screen-xl mx-auto mt-12 ">
+        <section class="relative  max-w-screen-xl mx-auto mt-24 ">
           
           <img class=" object-cover h-full w-full" src="./images/team.png" alt="">
           <div class="absolute top-0 left-0 h-full w-full bg-black opacity-50 rounded-lg"></div>
